@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Picks Hub - Honest Reviews & Best Deals</title>
+  <meta name="description" content="Discover honest product reviews, comparisons, and exclusive deals. We help you find the best products at the best prices.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo-icon">T</span>
+        Top Picks Hub
+      </a>
+      <ul class="navbar-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="reviews/index.html">Reviews</a></li>
+        <li><a href="deals/index.html">Deals</a></li>
+        <li><a href="reviews/index.html" class="cta-nav">Browse All →</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">✨ Trusted by 10,000+ readers</div>
+      <h1>Find the <span class="highlight">Best Products</span> Without the Guesswork</h1>
+      <p>Honest reviews, detailed comparisons, and exclusive deals. We do the research so you don't have to.</p>
+      <div class="hero-buttons">
+        <a href="reviews/index.html" class="btn btn-primary">Read Reviews →</a>
+        <a href="deals/index.html" class="btn btn-secondary">Today's Deals</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Reviews -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>⭐ Featured Reviews</h2>
+        <p>In-depth analysis to help you make the right choice</p>
+      </div>
+      <div class="card-grid" id="featured-reviews">
+        <!-- Cards will be populated here -->
+        <div class="card">
+          <div class="card-image">
+            <span>🚀</span>
+            <span class="card-badge">Editor's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="card-category">Software</div>
+            <h3 class="card-title"><a href="reviews/example-product.html">Example Product Review</a></h3>
+            <p class="card-desc">A comprehensive review of this amazing product. We tested it for 30 days to bring you the most honest assessment.</p>
+            <div class="card-meta">
+              <span>Apr 2026</span>
+              <span class="rating">★★★★★ 4.8/5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="reviews/index.html" class="btn btn-outline">View All Reviews →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hot Deals -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>🔥 Hot Deals</h2>
+        <p>Limited-time offers you don't want to miss</p>
+      </div>
+      <div class="deal-list" id="hot-deals">
+        <!-- Deals will be populated here -->
+        <div class="deal-card">
+          <div class="deal-icon">💡</div>
+          <div class="deal-info">
+            <h3>More deals coming soon...</h3>
+            <p>We're curating the best deals for you. Stay tuned!</p>
+          </div>
+          <div class="deal-price">
+            <div class="old">&nbsp;</div>
+            <div class="new">SOON</div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="deals/index.html" class="btn btn-outline">View All Deals →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Trust Us -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>🛡️ Why Trust Us?</h2>
+        <p>We're committed to honest, unbiased recommendations</p>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-body" style="text-align:center; padding:40px 24px;">
+            <div style="font-size:2.5rem; margin-bottom:16px;">🔬</div>
+            <h3 class="card-title">Hands-On Testing</h3>
+            <p class="card-desc">Every product we review is personally tested for at least 30 days before we publish our findings.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="text-align:center; padding:40px 24px;">
+            <div style="font-size:2.5rem; margin-bottom:16px;">💬</div>
+            <h3 class="card-title">Honest Opinions</h3>
+            <p class="card-desc">We never let sponsors influence our reviews. Our integrity is non-negotiable.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="text-align:center; padding:40px 24px;">
+            <div style="font-size:2.5rem; margin-bottom:16px;">🔄</div>
+            <h3 class="card-title">Regularly Updated</h3>
+            <p class="card-desc">We revisit and update our reviews to ensure the information stays current and accurate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section section-alt">
+    <div class="section-inner" style="text-align:center; max-width:600px;">
+      <h2>📬 Stay in the Loop</h2>
+      <p class="text-muted mt-1 mb-3">Get the latest reviews and deals delivered to your inbox. No spam, ever.</p>
+      <form style="display:flex; gap:8px; max-width:440px; margin:0 auto;" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+        <input type="email" placeholder="your@email.com" required style="flex:1; padding:12px 20px; border:1px solid var(--border); border-radius:100px; font-size:0.95rem; outline:none;">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">🔥 Top Picks Hub</div>
+          <p class="footer-desc">Your trusted source for honest product reviews and the best deals online.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews/index.html">Reviews</a></li>
+            <li><a href="deals/index.html">Deals</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="reviews/index.html">Software</a></li>
+            <li><a href="reviews/index.html">Electronics</a></li>
+            <li><a href="reviews/index.html">Health</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Affiliate Disclosure</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Top Picks Hub. All rights reserved.</span>
+        <span>Made with ❤️</span>
+      </div>
+      <div class="footer-disclaimer">
+        <strong>Affiliate Disclosure:</strong> Some of the links on this site are affiliate links. This means if you click on the link and purchase the item, we may receive a small commission at no extra cost to you. We only recommend products we genuinely believe in. Your support helps us keep creating great content!
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
