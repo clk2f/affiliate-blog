@@ -3,98 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Today's Deals - Top Picks Hub</title>
-  <meta name="description" content="Browse the best deals and exclusive discounts. Updated daily with hand-picked offers.">
+  <title>Today's Deals — Click2Future</title>
+  <meta name="description" content="The best deals on products we've already tested and recommend. Updated daily.">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
+
+  <!-- Disclosure Bar -->
+  <div class="top-bar">
+    We independently review everything we recommend. When you buy through our links, we may earn a commission. <a href="#">Learn more</a>
+  </div>
 
   <!-- Navigation -->
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="../index.html" class="navbar-brand">
-        <span class="logo-icon">T</span>
-        Top Picks Hub
-      </a>
-      <ul class="navbar-links">
+      <a href="../index.html" class="navbar-brand">Click2Future<span class="brand-dot">.</span></a>
+      <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="../reviews/index.html">Reviews</a></li>
-        <li><a href="index.html" class="active">Deals</a></li>
-        <li><a href="../reviews/index.html" class="cta-nav">Browse All →</a></li>
+        <li class="active"><a href="index.html">Deals</a></li>
       </ul>
+      <div class="nav-right">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Search deals...">
+        </div>
+      </div>
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- Page Header -->
-  <section class="hero" style="padding:60px 24px;">
-    <div class="hero-content">
-      <h1>🔥 Today's Best Deals</h1>
-      <p>Hand-picked discounts and exclusive offers, updated regularly</p>
-    </div>
-  </section>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="../index.html">Home</a>
+    <a href="../reviews/index.html">All Reviews</a>
+    <a href="index.html">Deals</a>
+  </div>
 
-  <!-- Deals List -->
-  <section class="section">
-    <div class="section-inner">
-      <div class="deal-list" id="all-deals">
-        <div class="deal-card">
-          <div class="deal-icon">💡</div>
-          <div class="deal-info">
-            <h3>More deals coming soon...</h3>
-            <p>We're curating the best deals for you. Check back soon!</p>
-          </div>
-          <div class="deal-price">
-            <div class="old">&nbsp;</div>
-            <div class="new">SOON</div>
-          </div>
+  <!-- Page Header -->
+  <div class="category-page-header">
+    <h1>Today's Deals</h1>
+    <p>Price drops on products we already love and recommend</p>
+  </div>
+
+  <!-- Deals Grid -->
+  <div class="deals-section">
+    <div class="deals-grid">
+      <div class="deal-card">
+        <div class="deal-card-image">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Headphones">
         </div>
+        <h4><a href="example-deal.html">Sony WH-1000XM5</a></h4>
+        <p>Our pick for the best wireless headphones</p>
+        <div class="deal-price">
+          <span class="current">$248</span>
+          <span class="original">$399</span>
+        </div>
+        <span class="deal-badge">38% off</span>
+      </div>
+      <div class="deal-card">
+        <div class="deal-card-image">
+          <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400&h=300&fit=crop" alt="Keyboard">
+        </div>
+        <h4><a href="example-deal.html">Keychron Q1 Pro</a></h4>
+        <p>Our pick for the best mechanical keyboard</p>
+        <div class="deal-price">
+          <span class="current">$129</span>
+          <span class="original">$199</span>
+        </div>
+        <span class="deal-badge">35% off</span>
+      </div>
+      <div class="deal-card">
+        <div class="deal-card-image">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=300&fit=crop" alt="Air Purifier">
+        </div>
+        <h4><a href="example-deal.html">Coway Airmega 400</a></h4>
+        <p>Our pick for the best air purifier</p>
+        <div class="deal-price">
+          <span class="current">$329</span>
+          <span class="original">$469</span>
+        </div>
+        <span class="deal-badge">30% off</span>
+      </div>
+      <div class="deal-card">
+        <div class="deal-card-image">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop" alt="Watch">
+        </div>
+        <h4><a href="example-deal.html">Apple Watch Series 10</a></h4>
+        <p>Our pick for the best smartwatch</p>
+        <div class="deal-price">
+          <span class="current">$329</span>
+          <span class="original">$399</span>
+        </div>
+        <span class="deal-badge">18% off</span>
+      </div>
+      <div class="deal-card">
+        <div class="deal-card-image">
+          <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop" alt="Laptop">
+        </div>
+        <h4><a href="example-deal.html">MacBook Air M3</a></h4>
+        <p>Our pick for the best laptop</p>
+        <div class="deal-price">
+          <span class="current">$899</span>
+          <span class="original">$1,099</span>
+        </div>
+        <span class="deal-badge">18% off</span>
+      </div>
+      <div class="deal-card">
+        <div class="deal-card-image">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop" alt="Coffee">
+        </div>
+        <h4><a href="example-deal.html">OXO Brew 9-Cup Coffee Maker</a></h4>
+        <p>Our pick for the best coffee maker</p>
+        <div class="deal-price">
+          <span class="current">$149</span>
+          <span class="original">$200</span>
+        </div>
+        <span class="deal-badge">25% off</span>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-grid">
         <div>
-          <div class="footer-brand">🔥 Top Picks Hub</div>
-          <p class="footer-desc">Your trusted source for honest product reviews and the best deals online.</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../reviews/index.html">Reviews</a></li>
-            <li><a href="index.html">Deals</a></li>
-          </ul>
+          <div class="footer-brand">Click2Future<span style="color:var(--primary)">.</span></div>
+          <p class="footer-desc">We independently review everything we recommend. When you buy through our links, we may earn a commission.</p>
         </div>
         <div>
           <h4>Categories</h4>
           <ul class="footer-links">
-            <li><a href="../reviews/index.html">Software</a></li>
-            <li><a href="../reviews/index.html">Electronics</a></li>
-            <li><a href="../reviews/index.html">Health</a></li>
+            <li><a href="../reviews/index.html">Tech</a></li>
+            <li><a href="../reviews/index.html">Home & Kitchen</a></li>
+            <li><a href="../reviews/index.html">Health & Fitness</a></li>
+            <li><a href="index.html">Deals</a></li>
           </ul>
         </div>
         <div>
-          <h4>Legal</h4>
+          <h4>Popular</h4>
           <ul class="footer-links">
+            <li><a href="../reviews/example-product.html">Best Laptops</a></li>
+            <li><a href="../reviews/example-product.html">Best Headphones</a></li>
+            <li><a href="../reviews/example-product.html">Best Coffee Makers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>About</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">How We Test</a></li>
             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Affiliate Disclosure</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Top Picks Hub. All rights reserved.</span>
-        <span>Made with ❤️</span>
+        <span>© 2026 Click2Future. All rights reserved.</span>
+        <span>Made with care</span>
       </div>
       <div class="footer-disclaimer">
-        <strong>Affiliate Disclosure:</strong> Some of the links on this site are affiliate links. This means if you click on the link and purchase the item, we may receive a small commission at no extra cost to you. We only recommend products we genuinely believe in.
+        <strong>Affiliate Disclosure:</strong> Click2Future is a participant in affiliate advertising programs. We independently review everything we recommend. When you buy through our links, we may earn a commission at no extra cost to you.
       </div>
     </div>
   </footer>

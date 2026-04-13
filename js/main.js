@@ -1,44 +1,30 @@
 // ============================================
-// Affiliate Blog - Main JS
+// Click2Future - Main JS
 // ============================================
 
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile menu toggle
   const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.navbar-links');
+  const mobileMenu = document.querySelector('.mobile-menu');
 
-  if (menuToggle && navLinks) {
+  if (menuToggle && mobileMenu) {
     menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
       menuToggle.classList.toggle('active');
+      document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
     });
 
-    // Close menu on link click
-    navLinks.querySelectorAll('a').forEach(link => {
+    // Close on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
+        mobileMenu.classList.remove('active');
         menuToggle.classList.remove('active');
+        document.body.style.overflow = '';
       });
     });
   }
 
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-
-  // Intersection Observer for fade-in animations
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
-
+  // Intersection Observer for fade-in
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -46,26 +32,29 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.unobserve(entry.target);
       }
     });
-  }, observerOptions);
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-  document.querySelectorAll('.card, .deal-card, .lp-cta').forEach(el => {
+  document.querySelectorAll('.article-card, .deal-card, .category-item, .hero-card, .category-list-item').forEach(el => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    el.style.transform = 'translateY(16px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     observer.observe(el);
   });
 
-  // Add visible class styles
+  // Inject visible class
   const style = document.createElement('style');
   style.textContent = `.visible { opacity: 1 !important; transform: translateY(0) !important; }`;
   document.head.appendChild(style);
 
-  // Active nav link highlighting
+  // Active nav highlighting
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.navbar-links a').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-      link.classList.add('active');
+  document.querySelectorAll('.nav-links > li').forEach(li => {
+    const link = li.querySelector('a');
+    if (link) {
+      const href = link.getAttribute('href');
+      if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+        li.classList.add('active');
+      }
     }
   });
 });

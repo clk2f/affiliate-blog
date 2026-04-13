@@ -3,145 +3,346 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Top Picks Hub - Honest Reviews & Best Deals</title>
-  <meta name="description" content="Discover honest product reviews, comparisons, and exclusive deals. We help you find the best products at the best prices.">
+  <title>Click2Future — Honest Reviews & Best Deals</title>
+  <meta name="description" content="We independently review everything we recommend. Find the best products with honest, in-depth reviews and exclusive deals.">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
+
+  <!-- Disclosure Bar -->
+  <div class="top-bar">
+    We independently review everything we recommend. When you buy through our links, we may earn a commission. <a href="#">Learn more</a>
+  </div>
 
   <!-- Navigation -->
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="index.html" class="navbar-brand">
-        <span class="logo-icon">T</span>
-        Top Picks Hub
-      </a>
-      <ul class="navbar-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="reviews/index.html">Reviews</a></li>
-        <li><a href="deals/index.html">Deals</a></li>
-        <li><a href="reviews/index.html" class="cta-nav">Browse All →</a></li>
+      <a href="index.html" class="navbar-brand">Click2Future<span class="brand-dot">.</span></a>
+
+      <ul class="nav-links">
+        <li class="active">
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <button>Tech <span class="nav-arrow"></span></button>
+          <div class="nav-dropdown">
+            <div class="dropdown-grid">
+              <div class="dropdown-group">
+                <div class="dropdown-group-title">Computers</div>
+                <ul>
+                  <li><a href="reviews/index.html">Laptops</a></li>
+                  <li><a href="reviews/index.html">Desktops</a></li>
+                  <li><a href="reviews/index.html">Monitors</a></li>
+                  <li><a href="reviews/index.html">Keyboards</a></li>
+                  <li><a href="reviews/index.html">Mice</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-group">
+                <div class="dropdown-group-title">Audio</div>
+                <ul>
+                  <li><a href="reviews/index.html">Headphones</a></li>
+                  <li><a href="reviews/index.html">Earbuds</a></li>
+                  <li><a href="reviews/index.html">Speakers</a></li>
+                  <li><a href="reviews/index.html">Soundbars</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-group">
+                <div class="dropdown-group-title">Phones & Tablets</div>
+                <ul>
+                  <li><a href="reviews/index.html">Smartphones</a></li>
+                  <li><a href="reviews/index.html">Tablets</a></li>
+                  <li><a href="reviews/index.html">Phone Cases</a></li>
+                  <li><a href="reviews/index.html">Chargers</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button>Home <span class="nav-arrow"></span></button>
+          <div class="nav-dropdown">
+            <div class="dropdown-grid">
+              <div class="dropdown-group">
+                <div class="dropdown-group-title">Kitchen</div>
+                <ul>
+                  <li><a href="reviews/index.html">Coffee Makers</a></li>
+                  <li><a href="reviews/index.html">Air Fryers</a></li>
+                  <li><a href="reviews/index.html">Blenders</a></li>
+                  <li><a href="reviews/index.html">Cookware</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-group">
+                <div class="dropdown-group-title">Cleaning</div>
+                <ul>
+                  <li><a href="reviews/index.html">Vacuum Cleaners</a></li>
+                  <li><a href="reviews/index.html">Robot Vacuums</a></li>
+                  <li><a href="reviews/index.html">Air Purifiers</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-group">
+                <div class="dropdown-group-title">Smart Home</div>
+                <ul>
+                  <li><a href="reviews/index.html">Smart Speakers</a></li>
+                  <li><a href="reviews/index.html">Security Cameras</a></li>
+                  <li><a href="reviews/index.html">Thermostats</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button>Health <span class="nav-arrow"></span></button>
+          <div class="nav-dropdown">
+            <div class="dropdown-grid">
+              <div class="dropdown-group">
+                <div class="dropdown-group-title">Fitness</div>
+                <ul>
+                  <li><a href="reviews/index.html">Fitness Trackers</a></li>
+                  <li><a href="reviews/index.html">Running Shoes</a></li>
+                  <li><a href="reviews/index.html">Yoga Mats</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-group">
+                <div class="dropdown-group-title">Wellness</div>
+                <ul>
+                  <li><a href="reviews/index.html">Water Bottles</a></li>
+                  <li><a href="reviews/index.html">Air Purifiers</a></li>
+                  <li><a href="reviews/index.html">Humidifiers</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-group">
+                <div class="dropdown-group-title">Sleep</div>
+                <ul>
+                  <li><a href="reviews/index.html">Mattresses</a></li>
+                  <li><a href="reviews/index.html">Pillows</a></li>
+                  <li><a href="reviews/index.html">White Noise Machines</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="deals/index.html">Deals</a>
+        </li>
       </ul>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Search reviews...">
+        </div>
+      </div>
+
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-badge">✨ Trusted by 10,000+ readers</div>
-      <h1>Find the <span class="highlight">Best Products</span> Without the Guesswork</h1>
-      <p>Honest reviews, detailed comparisons, and exclusive deals. We do the research so you don't have to.</p>
-      <div class="hero-buttons">
-        <a href="reviews/index.html" class="btn btn-primary">Read Reviews →</a>
-        <a href="deals/index.html" class="btn btn-secondary">Today's Deals</a>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="reviews/index.html">All Reviews</a>
+    <a href="deals/index.html">Deals</a>
+    <a href="reviews/index.html">Tech</a>
+    <a href="reviews/index.html">Home & Kitchen</a>
+    <a href="reviews/index.html">Health & Fitness</a>
+  </div>
+
+  <!-- Hero Featured -->
+  <div class="hero-featured">
+    <div class="hero-card">
+      <div class="hero-card-image">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=600&fit=crop" alt="Featured product">
+      </div>
+      <div class="hero-card-content">
+        <span class="tag">Editor's Pick</span>
+        <h2><a href="reviews/example-product.html">The Best Wireless Headphones for 2026</a></h2>
+        <p>After testing 45 pairs over six months, we found the headphones that deliver the best sound, comfort, and noise cancellation at every price point.</p>
+        <div class="meta">By <a href="#">Editor</a> · Updated April 2026</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Latest -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title"><a href="reviews/index.html">The Latest</a></h2>
+      <a href="reviews/index.html" class="section-more">See everything →</a>
+    </div>
+    <div class="latest-list">
+      <div class="latest-item">
+        <h3><a href="reviews/example-product.html">The Best Mechanical Keyboards for Every Budget</a></h3>
+        <div class="meta">April 12, 2026</div>
+      </div>
+      <div class="latest-item">
+        <h3><a href="reviews/example-product.html">We Tested 30 Air Fryers — Here Are the 5 Worth Buying</a></h3>
+        <div class="meta">April 11, 2026</div>
+      </div>
+      <div class="latest-item">
+        <h3><a href="reviews/example-product.html">The Best Robot Vacuums That Actually Clean Well</a></h3>
+        <div class="meta">April 10, 2026</div>
+      </div>
+      <div class="latest-item">
+        <h3><a href="reviews/example-product.html">A Great Laptop Doesn't Have to Cost $1,000</a></h3>
+        <div class="meta">April 9, 2026</div>
+      </div>
+      <div class="latest-item">
+        <h3><a href="reviews/example-product.html">The Best Water Bottles for Every Activity</a></h3>
+        <div class="meta">April 8, 2026</div>
+      </div>
+      <div class="latest-item">
+        <h3><a href="reviews/example-product.html">Foldable Phones Are Finally Worth Buying</a></h3>
+        <div class="meta">April 7, 2026</div>
       </div>
     </div>
   </section>
 
-  <!-- Featured Reviews -->
+  <!-- Daily Deals -->
   <section class="section">
-    <div class="section-inner">
-      <div class="section-header">
-        <h2>⭐ Featured Reviews</h2>
-        <p>In-depth analysis to help you make the right choice</p>
+    <div class="section-header">
+      <h2 class="section-title"><a href="deals/index.html">Today's Deals</a></h2>
+      <a href="deals/index.html" class="section-more">See all deals →</a>
+    </div>
+    <p class="section-subtitle">Price drops on products we already love</p>
+    <div class="deals-grid">
+      <div class="deal-card">
+        <div class="deal-card-image">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Headphones">
+        </div>
+        <h4><a href="deals/example-deal.html">Sony WH-1000XM5 Headphones</a></h4>
+        <div class="deal-price">
+          <span class="current">$248</span>
+          <span class="original">$399</span>
+        </div>
+        <span class="deal-badge">38% off</span>
       </div>
-      <div class="card-grid" id="featured-reviews">
-        <!-- Cards will be populated here -->
-        <div class="card">
-          <div class="card-image">
-            <span>🚀</span>
-            <span class="card-badge">Editor's Pick</span>
-          </div>
-          <div class="card-body">
-            <div class="card-category">Software</div>
-            <h3 class="card-title"><a href="reviews/example-product.html">Example Product Review</a></h3>
-            <p class="card-desc">A comprehensive review of this amazing product. We tested it for 30 days to bring you the most honest assessment.</p>
-            <div class="card-meta">
-              <span>Apr 2026</span>
-              <span class="rating">★★★★★ 4.8/5</span>
+      <div class="deal-card">
+        <div class="deal-card-image">
+          <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400&h=300&fit=crop" alt="Keyboard">
+        </div>
+        <h4><a href="deals/example-deal.html">Keychron Q1 Pro Keyboard</a></h4>
+        <div class="deal-price">
+          <span class="current">$129</span>
+          <span class="original">$199</span>
+        </div>
+        <span class="deal-badge">35% off</span>
+      </div>
+      <div class="deal-card">
+        <div class="deal-card-image">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=300&fit=crop" alt="Air Purifier">
+        </div>
+        <h4><a href="deals/example-deal.html">Coway Airmega 400 Air Purifier</a></h4>
+        <div class="deal-price">
+          <span class="current">$329</span>
+          <span class="original">$469</span>
+        </div>
+        <span class="deal-badge">30% off</span>
+      </div>
+      <div class="deal-card">
+        <div class="deal-card-image">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop" alt="Watch">
+        </div>
+        <h4><a href="deals/example-deal.html">Apple Watch Series 10</a></h4>
+        <div class="deal-price">
+          <span class="current">$329</span>
+          <span class="original">$399</span>
+        </div>
+        <span class="deal-badge">18% off</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Picks -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title"><a href="reviews/index.html">Tech</a></h2>
+      <a href="reviews/index.html" class="section-more">See all in Tech →</a>
+    </div>
+    <div class="category-section">
+      <div class="category-block">
+        <div class="category-featured">
+          <div class="category-item">
+            <div class="category-item-image">
+              <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop" alt="Laptop">
             </div>
+            <h4><a href="reviews/example-product.html">The Best Laptops</a></h4>
+            <p>After testing 50+ laptops, these are the ones we recommend for every budget.</p>
+          </div>
+          <div class="category-item">
+            <div class="category-item-image">
+              <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400&h=300&fit=crop" alt="Monitor">
+            </div>
+            <h4><a href="reviews/example-product.html">The Best Monitors</a></h4>
+            <p>Great monitors for work, gaming, and everything in between.</p>
           </div>
         </div>
       </div>
-      <div class="text-center mt-4">
-        <a href="reviews/index.html" class="btn btn-outline">View All Reviews →</a>
+      <div class="category-block">
+        <div class="category-featured">
+          <div class="category-item">
+            <div class="category-item-image">
+              <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=400&h=300&fit=crop" alt="Camera">
+            </div>
+            <h4><a href="reviews/example-product.html">The Best Cameras</a></h4>
+            <p>From smartphones to DSLRs, the best cameras for every skill level.</p>
+          </div>
+          <div class="category-item">
+            <div class="category-item-image">
+              <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=300&fit=crop" alt="Headphones">
+            </div>
+            <h4><a href="reviews/example-product.html">The Best Headphones</a></h4>
+            <p>Over-ear, on-ear, and earbuds — we've tested them all.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Hot Deals -->
-  <section class="section section-alt">
-    <div class="section-inner">
-      <div class="section-header">
-        <h2>🔥 Hot Deals</h2>
-        <p>Limited-time offers you don't want to miss</p>
-      </div>
-      <div class="deal-list" id="hot-deals">
-        <!-- Deals will be populated here -->
-        <div class="deal-card">
-          <div class="deal-icon">💡</div>
-          <div class="deal-info">
-            <h3>More deals coming soon...</h3>
-            <p>We're curating the best deals for you. Stay tuned!</p>
-          </div>
-          <div class="deal-price">
-            <div class="old">&nbsp;</div>
-            <div class="new">SOON</div>
-          </div>
-        </div>
-      </div>
-      <div class="text-center mt-4">
-        <a href="deals/index.html" class="btn btn-outline">View All Deals →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Trust Us -->
+  <!-- Home Picks -->
   <section class="section">
-    <div class="section-inner">
-      <div class="section-header">
-        <h2>🛡️ Why Trust Us?</h2>
-        <p>We're committed to honest, unbiased recommendations</p>
-      </div>
-      <div class="card-grid">
-        <div class="card">
-          <div class="card-body" style="text-align:center; padding:40px 24px;">
-            <div style="font-size:2.5rem; margin-bottom:16px;">🔬</div>
-            <h3 class="card-title">Hands-On Testing</h3>
-            <p class="card-desc">Every product we review is personally tested for at least 30 days before we publish our findings.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body" style="text-align:center; padding:40px 24px;">
-            <div style="font-size:2.5rem; margin-bottom:16px;">💬</div>
-            <h3 class="card-title">Honest Opinions</h3>
-            <p class="card-desc">We never let sponsors influence our reviews. Our integrity is non-negotiable.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body" style="text-align:center; padding:40px 24px;">
-            <div style="font-size:2.5rem; margin-bottom:16px;">🔄</div>
-            <h3 class="card-title">Regularly Updated</h3>
-            <p class="card-desc">We revisit and update our reviews to ensure the information stays current and accurate.</p>
-          </div>
-        </div>
-      </div>
+    <div class="section-header">
+      <h2 class="section-title"><a href="reviews/index.html">Home & Kitchen</a></h2>
+      <a href="reviews/index.html" class="section-more">See all in Home →</a>
     </div>
-  </section>
-
-  <!-- Newsletter -->
-  <section class="section section-alt">
-    <div class="section-inner" style="text-align:center; max-width:600px;">
-      <h2>📬 Stay in the Loop</h2>
-      <p class="text-muted mt-1 mb-3">Get the latest reviews and deals delivered to your inbox. No spam, ever.</p>
-      <form style="display:flex; gap:8px; max-width:440px; margin:0 auto;" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
-        <input type="email" placeholder="your@email.com" required style="flex:1; padding:12px 20px; border:1px solid var(--border); border-radius:100px; font-size:0.95rem; outline:none;">
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
+    <div class="category-section">
+      <div class="category-block">
+        <div class="category-featured">
+          <div class="category-item">
+            <div class="category-item-image">
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop" alt="Coffee">
+            </div>
+            <h4><a href="reviews/example-product.html">The Best Coffee Makers</a></h4>
+            <p>Drip, pour-over, espresso — find the perfect brewer for your morning ritual.</p>
+          </div>
+          <div class="category-item">
+            <div class="category-item-image">
+              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Kitchen">
+            </div>
+            <h4><a href="reviews/example-product.html">The Best Air Fryers</a></h4>
+            <p>Crispy, delicious results with less oil. Our top picks after months of testing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="category-block">
+        <div class="category-featured">
+          <div class="category-item">
+            <div class="category-item-image">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=300&fit=crop" alt="Vacuum">
+            </div>
+            <h4><a href="reviews/example-product.html">The Best Vacuum Cleaners</a></h4>
+            <p>Upright, cordless, robot — the best vacuums for every home and budget.</p>
+          </div>
+          <div class="category-item">
+            <div class="category-item-image">
+              <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=400&h=300&fit=crop" alt="Smart Home">
+            </div>
+            <h4><a href="reviews/example-product.html">The Best Smart Home Devices</a></h4>
+            <p>Make your home smarter with these essential gadgets.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -150,40 +351,43 @@
     <div class="footer-inner">
       <div class="footer-grid">
         <div>
-          <div class="footer-brand">🔥 Top Picks Hub</div>
-          <p class="footer-desc">Your trusted source for honest product reviews and the best deals online.</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="reviews/index.html">Reviews</a></li>
-            <li><a href="deals/index.html">Deals</a></li>
-          </ul>
+          <div class="footer-brand">Click2Future<span style="color:var(--primary)">.</span></div>
+          <p class="footer-desc">We independently review everything we recommend. When you buy through our links, we may earn a commission. Our goal is to help you find the best products at the best prices.</p>
         </div>
         <div>
           <h4>Categories</h4>
           <ul class="footer-links">
-            <li><a href="reviews/index.html">Software</a></li>
-            <li><a href="reviews/index.html">Electronics</a></li>
-            <li><a href="reviews/index.html">Health</a></li>
+            <li><a href="reviews/index.html">Tech</a></li>
+            <li><a href="reviews/index.html">Home & Kitchen</a></li>
+            <li><a href="reviews/index.html">Health & Fitness</a></li>
+            <li><a href="deals/index.html">Deals</a></li>
           </ul>
         </div>
         <div>
-          <h4>Legal</h4>
+          <h4>Popular</h4>
           <ul class="footer-links">
+            <li><a href="reviews/example-product.html">Best Laptops</a></li>
+            <li><a href="reviews/example-product.html">Best Headphones</a></li>
+            <li><a href="reviews/example-product.html">Best Coffee Makers</a></li>
+            <li><a href="reviews/example-product.html">Best Vacuums</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>About</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">How We Test</a></li>
+            <li><a href="#">Contact</a></li>
             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Affiliate Disclosure</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Top Picks Hub. All rights reserved.</span>
-        <span>Made with ❤️</span>
+        <span>© 2026 Click2Future. All rights reserved.</span>
+        <span>Made with care</span>
       </div>
       <div class="footer-disclaimer">
-        <strong>Affiliate Disclosure:</strong> Some of the links on this site are affiliate links. This means if you click on the link and purchase the item, we may receive a small commission at no extra cost to you. We only recommend products we genuinely believe in. Your support helps us keep creating great content!
+        <strong>Affiliate Disclosure:</strong> Click2Future is a participant in affiliate advertising programs designed to provide a means for sites to earn advertising fees by advertising and linking to products. We independently review everything we recommend. When you buy through our links, we may earn a commission at no extra cost to you. This does not influence our evaluations or rankings.
       </div>
     </div>
   </footer>
