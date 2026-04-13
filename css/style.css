@@ -803,7 +803,6 @@ ul, ol {
 
 /* === Article Body (left column) === */
 .lp-body {
-  max-width: 720px;
   min-width: 0;
 }
 
