@@ -533,8 +533,8 @@ ul, ol {
 /* === Deals Section === */
 .deals-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .deal-card {
@@ -1566,6 +1566,13 @@ ul, ol {
 .category-page-header p {
   font-size: 16px;
   color: var(--text-secondary);
+}
+
+/* Section inner container */
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .category-list {
