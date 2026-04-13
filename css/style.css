@@ -550,21 +550,22 @@ ul, ol {
 }
 
 .deal-card-image {
-  aspect-ratio: 16/9;
   background: var(--bg-section);
   border-radius: var(--radius);
-  overflow: hidden;
   margin-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  padding: 16px;
+  min-height: 100px;
+  max-height: 140px;
 }
 
 .deal-card-image img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 120px;
   object-fit: contain;
+  object-position: center;
 }
 
 .deal-card h4 {
